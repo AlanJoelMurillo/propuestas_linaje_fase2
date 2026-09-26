@@ -17,53 +17,19 @@
   <header class="hero">
     <!-- Fondo decorativo del hero (ilustración en SVG, sin dependencias externas) -->
     <div class="hero__background" aria-hidden="true">
-      <svg
-        class="hero__scene"
-        viewBox="0 0 1600 900"
-        preserveAspectRatio="xMidYMid slice"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <defs>
-          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#ffb87a" />
-            <stop offset="45%" stop-color="#ff8a65" />
-            <stop offset="100%" stop-color="#5b3a7a" />
-          </linearGradient>
-          <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#3a5a8c" />
-            <stop offset="100%" stop-color="#17203a" />
-          </linearGradient>
-          <linearGradient id="mountainFar" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#6f5a8c" />
-            <stop offset="100%" stop-color="#493a63" />
-          </linearGradient>
-          <linearGradient id="mountainNear" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#3a3155" />
-            <stop offset="100%" stop-color="#241d39" />
-          </linearGradient>
-        </defs>
-
-        <rect width="1600" height="900" fill="url(#sky)" />
-        <circle cx="1180" cy="330" r="120" fill="#ffe0a3" opacity="0.9" />
-
-        <path d="M0,560 L260,380 L470,560 L640,420 L860,560 L1080,400 L1300,560 L1600,430 L1600,600 L0,600 Z" fill="url(#mountainFar)" opacity="0.85" />
-        <path d="M0,650 L220,470 L400,620 L620,460 L820,650 L1040,480 L1260,650 L1600,500 L1600,700 L0,700 Z" fill="url(#mountainNear)" />
-
-        <rect y="700" width="1600" height="200" fill="url(#sea)" />
-        <path d="M0,700 Q400,680 800,705 T1600,700 L1600,900 L0,900 Z" fill="#101a30" opacity="0.7" />
-      </svg>
+      <img src="static/alabanza.jpeg" alt="">
     </div>
     <div class="hero__overlay" aria-hidden="true"></div>
 
     <!-- Navegación -->
     <nav class="navbar">
-      <a class="navbar__logo" href="#">Ma<span>tour</span></a>
+      <a class="navbar__logo" href="#">Linaje<span>Bendito</span></a>
 
       <ul class="navbar__links" id="navLinks">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Destinos</a></li>
-        <li><a href="#">Tours</a></li>
-        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Campus</a></li>
+        <li><a href="#">Ministerios</a></li>
+        <li><a href="#">Culto</a></li>
+        <li><a href="#">Eventos</a></li>
         <li><a href="#">Contacto</a></li>
       </ul>
 
@@ -76,77 +42,21 @@
 
     <!-- Contenido principal del hero -->
     <div class="hero__content">
-      <p class="hero__eyebrow">Bienvenido a Matour</p>
-      <h1 class="hero__title">Descubre el mundo<br />a tu manera</h1>
+      <p class="hero__eyebrow">Bienvenido a Linaje Bendito</p>
+      <h1 class="hero__title">Un estilo de vida<br />hecho iglesia</h1>
       <p class="hero__subtitle">
-        Encuentra experiencias únicas y tours inolvidables en los destinos
-        más hermosos del planeta.
+Somos diferentes historias, una misma familia y un mismo propósito: seguir a Jesús
       </p>
 
       <div class="hero__actions">
-        <a class="btn btn--primary" href="#buscar">Explorar tours</a>
+        <a class="btn btn--primary" href="#buscar">Bienvenida</a>
         <button class="btn btn--ghost" type="button" id="playVideoBtn">
           <span class="btn__icon" aria-hidden="true">▶</span>
-          Ver video
+          Ver en YouTube
         </button>
       </div>
     </div>
 
-    <!-- Formulario de búsqueda -->
-    <form class="search-form" id="buscar">
-      <div class="search-form__field">
-        <label for="destination">Destino</label>
-        <div class="search-form__control">
-          <span class="search-form__icon" aria-hidden="true">📍</span>
-          <select id="destination" name="destination">
-            <option value="" selected disabled>¿A dónde vas?</option>
-            <option value="bali">Bali, Indonesia</option>
-            <option value="santorini">Santorini, Grecia</option>
-            <option value="patagonia">Patagonia, Argentina</option>
-            <option value="kyoto">Kioto, Japón</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="search-form__divider" aria-hidden="true"></div>
-
-      <div class="search-form__field">
-        <label for="checkin">Entrada</label>
-        <div class="search-form__control">
-          <span class="search-form__icon" aria-hidden="true">📅</span>
-          <input type="date" id="checkin" name="checkin" />
-        </div>
-      </div>
-
-      <div class="search-form__divider" aria-hidden="true"></div>
-
-      <div class="search-form__field">
-        <label for="checkout">Salida</label>
-        <div class="search-form__control">
-          <span class="search-form__icon" aria-hidden="true">📅</span>
-          <input type="date" id="checkout" name="checkout" />
-        </div>
-      </div>
-
-      <div class="search-form__divider" aria-hidden="true"></div>
-
-      <div class="search-form__field">
-        <label for="guests">Viajeros</label>
-        <div class="search-form__control">
-          <span class="search-form__icon" aria-hidden="true">🧳</span>
-          <select id="guests" name="guests">
-            <option value="1">1 viajero</option>
-            <option value="2" selected>2 viajeros</option>
-            <option value="3">3 viajeros</option>
-            <option value="4">4+ viajeros</option>
-          </select>
-        </div>
-      </div>
-
-      <button class="btn btn--primary search-form__submit" type="submit">
-        Buscar
-      </button>
-    </form>
   </header>
 
   <script src="js/main.js"></script>

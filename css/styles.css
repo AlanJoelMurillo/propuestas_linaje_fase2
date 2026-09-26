@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #ff6b3d;
+  --color-primary: #E01932;
   --color-primary-dark: #e2551f;
   --color-dark: #1a1a2e;
   --color-white: #ffffff;
@@ -54,6 +54,14 @@ button {
   inset: 0;
   width: 100%;
   height: 100%;
+}
+
+.hero__background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .hero__overlay {
